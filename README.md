@@ -9,10 +9,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 
 Option 2
-Build docker image from nginx.dockerfile 
+Build docker image from nginx.dockerfile
+
 'docker build -t twitch-analytics-frontend . ' 
 
 run the container 
+
+
 'docker run -d -p 8080:80 twitch-analytics-frontend' 
 
 

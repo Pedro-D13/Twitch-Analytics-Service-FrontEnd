@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('twitch-analytics-service-frontend app is running!');
+    expect(page.getTitleText()).toEqual('twitch-analytics-service-frontend2 app is running!');
   });
 
   afterEach(async () => {

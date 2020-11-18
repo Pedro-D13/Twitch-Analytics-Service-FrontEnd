@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "twitch-analytics-service-frontend": {
+    "twitch-analytics-service-frontend2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/twitch-analytics-service-frontend",
+            "outputPath": "dist/twitch-analytics-service-frontend2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "twitch-analytics-service-frontend:build"
+            "browserTarget": "twitch-analytics-service-frontend2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "twitch-analytics-service-frontend:build:production"
+              "browserTarget": "twitch-analytics-service-frontend2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "twitch-analytics-service-frontend:build"
+            "browserTarget": "twitch-analytics-service-frontend2:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "twitch-analytics-service-frontend:serve"
+            "devServerTarget": "twitch-analytics-service-frontend2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "twitch-analytics-service-frontend:serve:production"
+              "devServerTarget": "twitch-analytics-service-frontend2:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "twitch-analytics-service-frontend"
+  "defaultProject": "twitch-analytics-service-frontend2"
 }

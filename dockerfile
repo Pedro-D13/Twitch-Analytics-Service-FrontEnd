@@ -14,5 +14,5 @@ RUN npm run build
 
 FROM nginx:1.13.12-alpine
 
-COPY --from=node /usr/src/app/dist/twitch-analytics-service-frontend /usr/share/nginx/html
+COPY --from=node /usr/src/app/dist/twitch-analytics-service-frontend2/. /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf

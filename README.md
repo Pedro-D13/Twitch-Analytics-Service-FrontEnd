@@ -4,7 +4,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Option 1
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+Option 2
+Build docker image from nginx.dockerfile 
+'docker build -t twitch-analytics-frontend . ' 
+
+run the container 
+'docker run -d -p 8080:80 twitch-analytics-frontend' 
+
+
 
 ## Code scaffolding
 
